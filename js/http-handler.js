@@ -21,10 +21,11 @@
                 saving = false,
 
                 stopLoading = function () {
-                    count = 0;
                     loading = false;
-                    saving = false;
                     _app.isLoading(false); // end loading
+                },
+                stopSaving = function () {
+                    saving = false;
                     _app.isSaving(false); // end saving
                 };
 
@@ -75,8 +76,11 @@
 
                             count--;
                             // 响应结束，清除相关状态
-                            if (loading && count === 0) {
-                                stopLoading();
+                            if (count === 0) {
+                                stopSaving();
+                                if (loading) {
+                                    stopLoading();
+                                }
                             }
 
                             if (angular.isObject(responseBody) && !responseBody.success) {
@@ -111,8 +115,11 @@
                         responseError: function (rejection) {
                             count--;
                             // 响应结束，清除相关状态
-                            if (loading && count === 0) {
-                                stopLoading();
+                            if (count === 0) {
+                                stopSaving();
+                                if (loading) {
+                                    stopLoading();
+                                }
                             }
                             // 失败弹出错误提示信息
                             tipsHandler.error("请求错误!");
