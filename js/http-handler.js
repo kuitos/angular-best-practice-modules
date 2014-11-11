@@ -140,27 +140,14 @@
             };
 
             this.setTipsHandler = function (tipsHandler) {
-
                 _tipsHandler = angular.extend(_tipsHandler, tipsHandler);
-            };
-
-            this.error = function (message) {
-                _tipsHandler.error(message);
-            };
-
-            this.warning = function (message) {
-                _tipsHandler.error(message);
-            };
-
-            this.success = function (message) {
-                _tipsHandler.success(message);
             };
 
             this.$get = function () {
                 return {
-                    error  : this.error,
-                    warning: this.warning,
-                    success: this.success
+                    error  : _tipsHandler.error,
+                    warning: _tipsHandler.warning,
+                    success: _tipsHandler.success
                 }
             };
 
