@@ -133,17 +133,15 @@
         /* 提示信息provider，用于配置错误提示处理器 **/
         .provider("tipsHandler", function () {
 
-            var _tipsHandler;
+            var _tipsHandler = {
+                error  : angular.noop,
+                warning: angular.noop,
+                success: angular.noop
+            };
 
             this.setTipsHandler = function (tipsHandler) {
 
-                _tipsHandler = angular.extend({
-
-                    error  : angular.noop,
-                    warning: angular.noop,
-                    success: angular.noop
-
-                }, tipsHandler);
+                _tipsHandler = angular.extend(_tipsHandler, tipsHandler);
             };
 
             this.error = function (message) {
