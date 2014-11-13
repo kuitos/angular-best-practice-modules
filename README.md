@@ -35,7 +35,7 @@
     
     4.http请求：
     
-        1.统一、必须采用resource方式，接口必须为restful接口，返回结果必须格式固定(例如：{msg:"",data:Object,success:true})，
+        1.统一、必须采用resource方式，接口必须为restful风格接口，返回结果必须格式固定(例如：{msg:"",data:Object,success:true})，
           这样才能做更高层次的封装(非常重要)!!禁止直接调用$http服务发送请求！
 
 ###其他: [angular-seed 第二部分 第三部分][1]
