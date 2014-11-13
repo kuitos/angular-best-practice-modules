@@ -5,7 +5,6 @@
     },
     "name"           : "shuyun-customer",
     "version"        : "1.0.0",
-    "description"    : "数云运营管理系统",
     "devDependencies": {
         "gulp"            : ">=3.8.8",
         "del"             : ">=0.1.3",
