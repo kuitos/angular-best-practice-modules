@@ -6,7 +6,7 @@
 (function (angular) {
     "use strict";
 
-    angular.module("common.filters", [])
+    angular.module("app.filters", [])
 
         .filter("filter", []);
 

@@ -44,7 +44,7 @@
             }
         };
 
-    angular.module("common.utils", [])
+    angular.module("app.utils", [])
 
         .value("utils", {
 

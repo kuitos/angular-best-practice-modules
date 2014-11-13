@@ -6,7 +6,7 @@
 (function (angular) {
     "use strict";
 
-    angular.module("common.services", ["ngResource", "ngCookies", "common.locale"])
+    angular.module("app.services", ["ngResource", "ngCookies", "common.locale"])
 
         /* ******************************** constants & values ******************************** */
         // 定义app

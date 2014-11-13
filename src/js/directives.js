@@ -6,7 +6,7 @@
 (function (angular) {
     "use strict";
 
-    angular.module("common.directives", ["ui.bootstrap"])
+    angular.module("app.directives", ["ui.bootstrap"])
 
     /**
      * 指令的要点是尽量保证scope隔离，也就是 scope:{}
