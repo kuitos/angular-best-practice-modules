@@ -56,6 +56,9 @@
         }])
 
         /* ******************************** factories ******************************** */
+    /**
+     * 普通service全部使用factory构建
+     */
         // 元素是否可见
         .factory('isVisible', function () {
             return function (element) {

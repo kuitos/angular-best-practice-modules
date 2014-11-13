@@ -1,12 +1,8 @@
 {
-    "name"        : "shuyun-customer",
+    "name"        : "angular-best-practice",
     "version"     : "1.0.0",
     "authors"     : [
         "Kuitos <kuitos.lau@gmail.com>"
-    ],
-    "description" : "数云运营管理系统",
-    "keywords"    : [
-        "数云"
     ],
     "dependencies": {
         "angular"          : ">=1.3.0",

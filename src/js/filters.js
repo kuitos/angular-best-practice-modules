@@ -6,6 +6,8 @@
 (function (angular) {
     "use strict";
 
-    angular.module("common.filters", []);
+    angular.module("common.filters", [])
+
+        .filter("filter", []);
 
 })(window.angular);
