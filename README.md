@@ -32,8 +32,8 @@
           框架完成，我们关注的只有业务和数据。建议每个directive都由一个templateUrl(template)。
         3.在引入第三方ui组件之前请仔细考虑如果自己实现的代价有多大。通常轻量级的组件都可以自己去实现，不建议过多的依赖于第三方插件，尤其是用jquery实现的。
           总之，在引入第三方插件之前，请慎重考虑。
-          
-    4.其他:
-        参考：https://github.com/kuitos/angular-seed readme
+
+###其他:[readme][1] ##
      
 ###MIT
+    [1]:https://github.com/kuitos/angular-seed
